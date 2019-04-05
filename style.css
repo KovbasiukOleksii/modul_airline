@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+h3 {
+    color: #007DC4;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.direction {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.city__row-one,
+.city__row-two {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.city__row-one a,
+.city__row-two a {
+    border: 1px solid #959595;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 30px;
+    padding-top: 6px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+}
+
+.city__row-one a:hover,
+.city__row-two a:hover,
+.direction__city a:hover {
+    background-color: #117DC4;
+    color: #fff;
+    transition: .3s;
+}
+
+.active__city {
+    background-color: #117DC4;
+    color: #fff;
+}
+
+.active__day {
+    color: #007DC4;
+    font-weight: bold;
+}
+
+
+.direction__city {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.direction__city a {
+    border: 1px solid #959595;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+}
+
+
+.airline__table {
+    width: 100%;
+    border: 1px solid #959595;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+}
+
+.tooltip {
+    outline: none;
+	cursor: help; 
+    text-decoration: none;
+	position: relative;
+}
+
+.tooltip span {
+	margin-left: -999em;
+	position: absolute;
+}
+
+.tooltip:hover span {
+	border-radius: 5px 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); 
+    -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    position: absolute; left: 1em; top: 2em; 
+    z-index: 99;
+    margin-left: 0; width: 250px;
+}
+
+
+.dscr {
+    text-transform: none;
+    background: #FFFFAA;
+    border: 1px solid #FFAD33;
+}
+
+.info-prise {
+    margin-bottom: -6px;
+}
+
+.airline__table thead {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #117DC4 !important;
+    color: #fff;
+}
+
+
+tr {
+    border: 1px solid #959595;
+}
+
+.airline__table td:nth-child(1) {
+    padding: 8px;
+}
+
+.airline__table tbody tr:hover {
+    background-color: #CEE9FB;
+    cursor: pointer;
+}
+
+tbody img {
+    padding: 2px;
+    width: 50px;
+    margin-bottom: -2px;
+}
+
+td:nth-child(2) {
+   width: 50px;
+}
+
+thead p {
+    text-align: justify;						 
+	text-align-last: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.airline__table tbody td:nth-child(1) {
+    max-width: 150px;
+    text-align: center;
+}
+
+.airline__table tbody td:nth-child(3) {
+    max-width: 100px;
+    text-align: justify;						 
+	text-align-last: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.airline__active {
+    font-size: 16px;
+    color: #007DC4;
+}
+
+.airline__departed-from,
+.airline__departed-to {
+    color: #007DC4;
+    font-size: 14px;
+}
+
+.arline__table-active {
+    width: 100%;
+    border: 1px solid #959595;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+}
+
+.arline__table-active tbody tr:hover {
+    background-color: #CEE9FB;
+    cursor: pointer;
+}
+
+.arline__table-active thead {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #117DC4 !important;
+    color: #fff;
+}
+
+.arline__table-active td {
+    width:  150px;
+    text-align: center;
+}
+
+.hb__static {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.hb__static h2 img {
+    margin-bottom: -7px;
+}
+
+.hb__static-info {
+    margin-top: 3px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+form h2 {
+    display: inline;
+    font-size: 14px;
+}
+
+.quantity-num {
+    width: 60px;
+    text-align: center;
+    background-color: #E9E9E9;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+input,
+select {
+    outline: none;
+}
+
+.input__num {
+    margin-bottom: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.result {
+    width: 70%;
+    float: left;
+}
+
+.rusult__title {
+    vertical-align:baseline;
+    text-align: right;
+    font-weight: bold;
+}
+.right_align {
+    text-align: right;
+}
+
+.hb__img {
+    width: 30%;
+}
+
+.space {
+    height: 20px;
+}
+
+.flower {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    box-shadow: 0px 0px 5px 1px rgba(163,163,163,1);
+    text-align: center;
+}
+
+select {
+    background-color: #E9E9E9;
+    border-radius: 5px;
+}
+
+.flower tr td {
+    border: 1px solid grey;
+}
+
+.flower thead {
+    background: #117DC4 !important;
+    color: #fff;
+    font-weight: bold;
+}
+
+.flower img {
+    width: 25px;
+    margin-bottom: -7px;
+    
+}
+
+.flower td:first-child {
+    width: 200px;
+    height: 50px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer p:first-child,
+footer p:last-child {
+    font-weight: bold;
+}
+
+footer li {
+    margin-left: 30px;
+}
+
+footer h3 {
+    margin: 10px 0;
+}
+
+.back-top {
+    text-align: center;
+}
+
+.back-top h2 {
+    margin-top: 30px;
+    line-height: 0.5;
+}
