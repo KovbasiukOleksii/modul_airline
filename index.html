@@ -8,6 +8,7 @@
    <title>Daoflowers</title>
    <!-- CSS ========================================== -->
    <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -15,7 +16,7 @@
         <header>
             <h2>Выберите город, в который требуется доставка:</h2>
             <div class="city__row-one">
-                <a href="#">Алматы</a>
+                <a href="#" onclick="myFunction()">Алматы</a>
                 <a href="#">Амстердам</a>
                 <a href="#">Астана</a>
                 <a href="#">Баку</a>
@@ -28,7 +29,7 @@
             </div>
         </header>
         <!-- Кнопки выбора города, с которого возмажна доставка-->
-        <section class="direction">
+        <section class="direction" id="myDIV">
             <h2>Выберите город, из которого требуется доставка:</h2>
             <div class="direction__city">
                 <a class="active__city" href="#">Кито - Дубаи</a>
@@ -49,7 +50,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr onclick="myFunctionTwo()">
                         <td><h3>LUFTHANSA CARGO</h3><p>(Кито-Панама-Франкфурт-Дубаи)</p>
                         </td>
                         <td><img src="img/luftganzalogo.png" alt="luftganza"></td>
@@ -101,7 +102,7 @@
             </table>
             <p>*Дата обновления информации:<span> 03.04.2019г</span></p>
         </section>
-        <section class="airline">
+        <section class="airline" id="myDIVtwo">
            <!-- Секция с информацией о выбраной авиакомпании для перовозки груза -->
             <h2>Авиакомпания:&#8194<span class="airline__active">LUFTHANSA CARGO</span></h2> 
             <hr>
