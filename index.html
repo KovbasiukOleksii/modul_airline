@@ -16,14 +16,14 @@
         <header>
             <h2>Выберите город, в который требуется доставка:</h2>
             <div class="city__row-one">
-                <a href="#" onclick="myFunction()">Алматы</a>
-                <a href="#">Амстердам</a>
+                <a id="almaty" href="#" onclick="myFunctionAlm()">Алматы</a>
+                <a id="amsterdam" href="#" onclick="myFunctionAms()">Амстердам</a>
                 <a href="#">Астана</a>
                 <a href="#">Баку</a>
             </div>
             <div class="city__row-two">
                 <a href="#">Бишкек</a>
-                <a class="active__city" href="#">Дубаи</a>
+                <a href="#">Дубаи</a>
                 <a href="#">Ташкент</a>
                 <a href="#">Тбилиси</a>
             </div>
@@ -32,9 +32,9 @@
         <section class="direction" id="myDIV">
             <h2>Выберите город, из которого требуется доставка:</h2>
             <div class="direction__city">
-                <a class="active__city" href="#">Кито - Дубаи</a>
-                <a href="#">Багота - Дубаи</a>
-                <a href="#">Найроби - Дубаи</a>
+                <a class="active__city" href="#">Кито - <span class="elem"></span></a>
+                <a href="#">Багота - <span class="elem2"></span></a>
+                <a href="#">Найроби - <span class="elem3"></span></a>
             </div>
             <!-- Таблица с авианаправлениями -->
             <table class="airline__table">
@@ -51,7 +51,7 @@
                 </thead>
                 <tbody>
                     <tr onclick="myFunctionTwo()">
-                        <td><h3>LUFTHANSA CARGO</h3><p>(Кито-Панама-Франкфурт-Дубаи)</p>
+                        <td><h3>LUFTHANSA CARGO</h3><p>(Кито-Панама-Франкфурт-<span class="from">Амстердам</span>)</p>
                         </td>
                         <td><img src="img/luftganzalogo.png" alt="luftganza"></td>
                         <td>USD3.25  USD4.15</td>
@@ -64,7 +64,7 @@
                         <td class="active__day">ВС</td>
                     </tr>                    
                     <tr>
-                        <td><h3>KLM</h3><p>(Кито-Маями-Амстердам-Дубаи)</p></td>
+                        <td><h3>KLM</h3><p>(Кито-Маями-Амстердам-<span class="from1">Амстердам</span>)</p></td>
                         <td><img src="img/klnlogo.png" alt="luftganza"></td>
                         <td>USD3.25  USD4.15</td>
                         <td class="active__day">ПН</td>
@@ -76,7 +76,7 @@
                         <td class="active__day">ВС</td>
                     </tr>                    
                     <tr>
-                        <td><h3>EMIRATES SKYCARGO</h3><p>(Кито-Амстердам-Дубаи)</p></td>
+                        <td><h3>EMIRATES SKYCARGO</h3><p>(Кито-Амстердам-<span class="from2"></span>)</p></td>
                         <td><img src="img/emiratescargologo.png" alt="luftganza"></td>
                         <td>USD3.25  USD4.15</td>
                         <td class="active__day">ПН</td>
@@ -88,7 +88,7 @@
                         <td class="active__day">ВС</td>
                     </tr>                    
                     <tr>
-                        <td><h3>TURKISH CARGO</h3><p>(Кито-Маями-Истанбул-Дубаи)</p></td>
+                        <td><h3>TURKISH CARGO</h3><p>(Кито-Маями-Истанбул-<span class="from3"></span>)</p></td>
                         <td><img src="img//turkishcargo.png" alt="luftganza"></td>
                         <td>USD3.25  USD4.15</td>
                         <td class="active__day">ПН</td>
@@ -189,7 +189,7 @@
                     </h2>
                 </div>
                 <div class="hb__static-info">
-                    <h2>22.5kg</h2>
+                    <h2 id="kg">22.5kg</h2>
                 </div>
             </div>
             <hr>
@@ -198,13 +198,13 @@
                 <form>
                     <div class="input__num">
                         <h2>Введите необходимое число коробок (min 5):</h2>
-                        <input class="quantity-num" type="number" value="10">
+                        <input class="quantity-num" type="number">
                     </div>
                     <table class="result">
                         <tbody>
                             <tr>
                                 <td class="rusult__title" rowspan="3">Текущий тариф авиакомпании за кг груза:</td>
-                                <td class="active__day">3.17USD</td>
+                                <td id="totalAgent" class="active__day">3.17USD</td>
                                 <td>(100кг+)</td>
                             </tr>
                             <tr>
@@ -226,20 +226,20 @@
                             <tr></tr>
                             <tr>
                                 <td class="rusult__title">Дополнительные сборы грузового агента за перевозку:</td>
-                                <td class="active__day">70.00USD</td>
+                                <td id="totalGruz" class="active__day" colspan="2">70.00 USD</td>
                             </tr>
                             <tr>
                                 <td class="right_align">*оформление документов:</td>
-                                <td>25.00</td>
+                                <td colspan="2">25.00</td>
                             </tr>
                             <tr>
                                 <td class="right_align">*стоимоть Handling:</td>
-                                <td>45.00</td>
+                                <td colspan="2">45.00</td>
                             </tr>
                             <tr class="space"></tr>
                             <tr>
                                 <td class="rusult__title">Всего за оформление и авиаперевозку:</td>
-                                <td class="active__day" colspan="2">783.25 USD</td>
+                                <td id="totalPrise" class="active__day" colspan="2">783.25 USD</td>
                             </tr>
                         </tbody>
                     </table>
